@@ -209,8 +209,8 @@ static void detect_init(uint32_t time)
     uint16_t set_item[ERROR_LIST_LENGHT][3] =
         {
             {50, 60, 15},   //IBUS
-            {100, 400, 11},   //motor1
-            {100, 400, 11},   //motor2
+            {100, 300, 11},   //motor1
+            {100, 300, 11},   //motor2
             {60, 200, 10},    //STEER1
             {60, 200, 10},    //STEER2
             {60, 200, 6},    //brake

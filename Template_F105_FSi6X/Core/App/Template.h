@@ -28,7 +28,7 @@
 #define CAN1_flag  1
 #define CAN2_flag  1
 	
-#define UART2_Debugg_flag  1  //默认输出调试信息
+#define UART2_Debugg_flag  0  //默认输出调试信息
 #if UART2_Debugg_flag == 0
 	#define UART2_flag     1 //普通串口使用
 #endif

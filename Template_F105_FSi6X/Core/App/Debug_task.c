@@ -77,7 +77,53 @@ static void VehSta_Debugg_fun(host_computer_debugg* hc_debugg,const chassis_move
   */
 static void RT_Debugg_fun(host_computer_debugg* hc_debugg);
 
+
 uint32_t time;
+uint32_t time1,time2;
+
+/**
+  * @brief          make the buzzer sound
+  * @param[in]      num: the number of beeps 
+  * @retval         none
+  */
+/**
+  * @brief          使得蜂鸣器响
+  * @param[in]      num:响声次数
+  * @retval         none
+  */
+static void buzzer_warn_error(uint8_t num)
+{
+    static uint8_t show_num = 0;
+    static uint8_t stop_num = 200;
+    if(show_num == 0 && stop_num == 0)
+    {
+        show_num = num;
+        stop_num = 200;
+    }
+    else if(show_num == 0)
+    {
+        stop_num--;
+        HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_RESET);
+    }
+    else
+    {
+        static uint8_t tick = 0;
+        tick++;
+        if(tick < 50)
+        {
+            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_RESET);
+        }
+        else if(tick < 100)
+        {
+            HAL_GPIO_WritePin(GPIOB,GPIO_PIN_15,GPIO_PIN_SET);
+        }
+        else
+        {
+            tick = 0;
+            show_num--;
+        }
+    }
+}
 
 void Debug_task(void const * argument)
 {
@@ -106,8 +152,12 @@ void Debug_task(void const * argument)
 //			for(uint32_t t=0;t<1000000;t++);
 //			HAL_NVIC_SystemReset();//软复位
 //		}
-		
-    osDelay(20);
+		static uint16_t ii = 1;
+		buzzer_warn_error(ii);
+//		ii = 0;
+	
+//		HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_15);
+    osDelay(10);
   }
   /* USER CODE END Debug_task */
 }
