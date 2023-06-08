@@ -40,12 +40,12 @@ void Flash_Erase(void)
     
      if (HAL_FLASHEx_Erase(&EraseInitStruct, &PAGEError) != HAL_OK)  
 	 {
-		 HAL_FLASH_Lock();  
+			HAL_FLASH_Lock();  
 //		 printf(" Error...1\r\n");
-				uint8_t err[8] = {0xFF,0xFF,0x00,0x00,0x00,0x00,0x00,0x01};
-		  	HAL_UART_Transmit_DMA(&huart2,(uint8_t *)err,8);
+			uint8_t err[8] = {0xFF,0xFF,0x00,0x00,0x00,0x00,0x00,0x01};
+			HAL_UART_Transmit_DMA(&huart2,(uint8_t *)err,8);
 
-         Error_Handler( );
+			Error_Handler( );
 	 }
 }
  /**********************************************************************************

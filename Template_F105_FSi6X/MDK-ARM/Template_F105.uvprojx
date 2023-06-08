@@ -644,6 +644,11 @@
               <FileType>5</FileType>
               <FilePath>..\Core\Readme.txt</FilePath>
             </File>
+            <File>
+              <FileName>firmware.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\App\firmware.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

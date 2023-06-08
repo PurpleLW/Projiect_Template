@@ -152,8 +152,8 @@ void Debug_task(void const * argument)
 //			for(uint32_t t=0;t<1000000;t++);
 //			HAL_NVIC_SystemReset();//Èí¸´Î»
 //		}
-		static uint16_t ii = 1;
-		buzzer_warn_error(ii);
+//		static uint16_t ii = 1;
+//		buzzer_warn_error(ii);
 //		ii = 0;
 	
 //		HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_15);

@@ -214,11 +214,25 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
     
     
 }
+/*
+void RC_restart(uint16_t dma_buf_num)
+{
+    __HAL_UART_DISABLE(&huart1);
+    __HAL_DMA_DISABLE(&hdma_usart1_rx);
 
+    hdma_usart1_rx.Instance->CNDTR = dma_buf_num;
+
+    __HAL_DMA_ENABLE(&hdma_usart1_rx);
+    __HAL_UART_ENABLE(&huart1);
+
+}
+
+*/
 //********************LLLWWW***********************
 
 void send_UUID()
 {
+
 		uint32_t send_mail_box;
 		chassis_tx_message.StdId = 0x099;
 		chassis_tx_message.IDE = CAN_ID_STD;
