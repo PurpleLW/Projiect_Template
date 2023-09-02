@@ -150,7 +150,11 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>ST-LINKIII-KEIL_SWO</Key>
+<<<<<<< HEAD
           <Name>-U-O142 -O2254 -SF10000 -C0 -A0 -I0 -HNlocalhost -HP7184 -P1 -N00("ARM CoreSight SW-DP") -D00(1BA01477) -L00(0) -TO131090 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F10x_CL.FLM -FS08000000 -FL020000 -FP0($$Device:STM32F105RB$Flash\STM32F10x_CL.FLM)</Name>
+=======
+          <Name>-U-O142 -O2254 -SF10000 -C0 -A0 -I0 -HNlocalhost -HP7184 -P1 -N00("ARM CoreSight SW-DP (ARM Core") -D00(1BA01477) -L00(0) -TO131090 -TC10000000 -TT10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC800 -FN1 -FF0STM32F10x_CL.FLM -FS08000000 -FL020000 -FP0($$Device:STM32F105RB$Flash\STM32F10x_CL.FLM)</Name>
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
         </SetRegEntry>
       </TargetDriverDllRegistry>
       <Breakpoint/>
@@ -170,6 +174,7 @@
           <WinNumber>1</WinNumber>
           <ItemText>hc_debugg</ItemText>
         </Ww>
+<<<<<<< HEAD
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
@@ -180,6 +185,8 @@
           <WinNumber>1</WinNumber>
           <ItemText>size_para,0x0A</ItemText>
         </Ww>
+=======
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
       </WatchWindow1>
       <Tracepoint>
         <THDelay>0</THDelay>
@@ -591,7 +598,11 @@
 
   <Group>
     <GroupName>Middlewares/FreeRTOS</GroupName>
+<<<<<<< HEAD
     <tvExp>0</tvExp>
+=======
+    <tvExp>1</tvExp>
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>
@@ -843,6 +854,7 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+<<<<<<< HEAD
     <File>
       <GroupNumber>6</GroupNumber>
       <FileNumber>48</FileNumber>
@@ -855,6 +867,8 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+=======
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
   </Group>
 
   <Group>

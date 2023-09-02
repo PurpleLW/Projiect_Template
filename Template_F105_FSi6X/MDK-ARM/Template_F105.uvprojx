@@ -10,7 +10,11 @@
       <TargetName>Template_F105</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
+<<<<<<< HEAD
       <pCCUsed>5060960::V5.06 update 7 (build 960)::.\arm5</pCCUsed>
+=======
+      <pCCUsed>5060960::V5.06 update 7 (build 960)::.\ARMCC</pCCUsed>
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
       <uAC6>0</uAC6>
       <TargetOption>
         <TargetCommonOption>
@@ -186,7 +190,10 @@
             <RvdsVP>0</RvdsVP>
             <RvdsMve>0</RvdsMve>
             <RvdsCdeCp>0</RvdsCdeCp>
+<<<<<<< HEAD
             <nBranchProt>0</nBranchProt>
+=======
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
             <hadIRAM2>0</hadIRAM2>
             <hadIROM2>0</hadIROM2>
             <StupSel>8</StupSel>
@@ -644,11 +651,14 @@
               <FileType>5</FileType>
               <FilePath>..\Core\Readme.txt</FilePath>
             </File>
+<<<<<<< HEAD
             <File>
               <FileName>firmware.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\App\firmware.c</FilePath>
             </File>
+=======
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
           </Files>
         </Group>
         <Group>

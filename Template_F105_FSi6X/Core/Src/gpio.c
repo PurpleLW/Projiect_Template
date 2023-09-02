@@ -57,7 +57,11 @@ void MX_GPIO_Init(void)
                           |MOS12V_5_Pin|MOS12V_6_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
+<<<<<<< HEAD
   HAL_GPIO_WritePin(GPIOB, RS485_S0_Pin|RS485_S1_Pin|GPIO_PIN_15, GPIO_PIN_RESET);
+=======
+  HAL_GPIO_WritePin(GPIOB, RS485_S0_Pin|RS485_S1_Pin, GPIO_PIN_RESET);
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, Gear_L_Pin|Gear_R_Pin, GPIO_PIN_RESET);
@@ -98,7 +102,11 @@ void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /*Configure GPIO pins : PBPin PBPin */
+<<<<<<< HEAD
   GPIO_InitStruct.Pin = RS485_S0_Pin|RS485_S1_Pin|GPIO_PIN_15;
+=======
+  GPIO_InitStruct.Pin = RS485_S0_Pin|RS485_S1_Pin;
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;

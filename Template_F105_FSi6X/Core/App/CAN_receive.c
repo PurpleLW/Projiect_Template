@@ -214,6 +214,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
     
     
 }
+<<<<<<< HEAD
 /*
 void RC_restart(uint16_t dma_buf_num)
 {
@@ -228,11 +229,17 @@ void RC_restart(uint16_t dma_buf_num)
 }
 
 */
+=======
+
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
 //********************LLLWWW***********************
 
 void send_UUID()
 {
+<<<<<<< HEAD
 
+=======
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
 		uint32_t send_mail_box;
 		chassis_tx_message.StdId = 0x099;
 		chassis_tx_message.IDE = CAN_ID_STD;

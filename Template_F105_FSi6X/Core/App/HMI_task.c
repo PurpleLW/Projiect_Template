@@ -18,6 +18,7 @@
   ****************************(C) COPYRIGHT 2022 ¿µÎÖÈð****************************
   */
 
+<<<<<<< HEAD
 #include "HMI_task.h"
 #include "cmsis_os.h"
 #include "Flash.h"
@@ -57,4 +58,8 @@ uint16_t size_para;
   }
 	 
  }
+=======
+
+#include "HMI_task.h"
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
 

@@ -77,6 +77,7 @@ static void VehSta_Debugg_fun(host_computer_debugg* hc_debugg,const chassis_move
   */
 static void RT_Debugg_fun(host_computer_debugg* hc_debugg);
 
+<<<<<<< HEAD
 
 uint32_t time;
 uint32_t time1,time2;
@@ -124,6 +125,9 @@ static void buzzer_warn_error(uint8_t num)
         }
     }
 }
+=======
+uint32_t time;
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
 
 void Debug_task(void const * argument)
 {
@@ -152,12 +156,17 @@ void Debug_task(void const * argument)
 //			for(uint32_t t=0;t<1000000;t++);
 //			HAL_NVIC_SystemReset();//Èí¸´Î»
 //		}
+<<<<<<< HEAD
 //		static uint16_t ii = 1;
 //		buzzer_warn_error(ii);
 //		ii = 0;
 	
 //		HAL_GPIO_TogglePin(GPIOB,GPIO_PIN_15);
     osDelay(10);
+=======
+		
+    osDelay(20);
+>>>>>>> e037807c5270ce72380d7a6187a961266f84d5ff
   }
   /* USER CODE END Debug_task */
 }
