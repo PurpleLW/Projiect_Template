@@ -23,6 +23,5 @@ int main(void)
         LOG_D("Hello RT-Thread!");
         rt_thread_mdelay(1000);
     }
-    int32_t a;
     return RT_EOK;
 }
